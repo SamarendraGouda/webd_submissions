@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&family=Source+Sans+Pro:ital,wght@0,300;1,200;1,600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    
+}
+body{
+    background-color: rgb(34, 43, 61);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    max-height: 60px;
+    
+}
+
+li,a,button{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 300;
+    color: white;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links a:hover{
+    color: rgb(36, 91, 173);
+}
+
+
+button{
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(36, 91, 173,0.8);
+    padding: 9px 20px;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(36, 91, 173,0.5);
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color:rgb(34, 43, 61) ;
+  }
+
+.main{
+    position: relative;
+}
+
+.main-img{
+    height: 720px;
+    width: 100%;
+    opacity: 50%;
+}
+#main-text {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        background-color: rgba(0,0,0,0.3);     
+        text-align: center;
+        padding: 30px 50px;
+
+}
+
+.text-h{
+        font-size: 7.5vw;
+        background-color: rgba(0, 0, 0, 0);
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        animation: 3s anim-lineUp ease;
+}
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.2;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+.text-b{
+        margin-top: 20px;
+        font-size:1.5vw ;
+        font-family: 'Raleway', sans-serif;
+        font-style: italic;
+        font-weight: 200;
+        animation: 4s anim-lineUp ease;
+}
+.text-contact{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    margin-top: 20px;
+    font-size:20px ;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.logo1{
+    height: 90px;
+    width: 100px;
+}
+.logo2{
+    height: 90px;
+    width: 80px;
+}
+
+.content1{
+    
+    text-align: left;
+    color: white;
+    border:none;
+    padding: 50px 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+
+}
+
+.content1 h1, .content2 h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 5rem;
+    margin-bottom: 100px;
+    margin-top: 60px;
+    
+}
+.content1 p{
+        margin-top: 20px;
+        font-size:20px ;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 200;
+        text-align: left;
+}
+
+.content2{
+    text-align: center;
+    color: white;
+    border:none;
+    padding-left:  40px;
+    padding-right:  40px;
+    padding-top: 40px;
+
+    background-color: rgba(0, 0, 0, 0);
+}
+.content2 h1{
+    text-align: right;
+}
+.content2 h2{
+    padding-top: 20px;
+}
+#team ul{
+    list-style: none;
+}
+#team h3{
+    padding-top: 10px;
+}
+#team div{
+    justify-content: space-evenly;
+}
+#team h2{
+    font-family:'Raleway', sans-serif;
+}
+
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    margin: 0px 40px;
+    width: 60vw;
+    height: 450px;
+}
+.cards-container{
+    display: flex;
+    padding: 20px 30px;
+    justify-content: space-evenly;
+}
+.cards-container p{
+    font-size:20px ;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+.cards-container h3{
+    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    padding-top: 20px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    background-color: rgba(0,0,0,0.1);
+    align-items: center;
+
+}
+
+#sponsor div img{
+    width: 200px;
+    
+
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 5%;
+    background-color: rgba(0,0,0,0.7);
+}
+.footer-item{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.footer-item ul{
+    list-style: none;
+    padding-top: 20px;
+}
+
+
+
+
+@media (max-width:800px){
+
+    .cards-container{
+        flex-direction: column;
+    }
+    .row {
+        flex-direction: column;
+    }
+}
